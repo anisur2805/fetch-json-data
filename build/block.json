@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/fetch-json-data",
+  "version": "0.1.0",
+  "title": "Fetch Json Data",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "selector": ".table-title",
+      "default": "Fetch Data from End point"
+    },
+    "rowsPerPage": {
+      "type": "number",
+      "default": 10
+    },
+    "current_page": {
+      "type": "number",
+      "default": 1
+    },
+    "showPagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "content": {
+      "type": "string",
+      "selector": ".table-content",
+      "default": "This is a gutenberg block."
+    }
+  },
+  "textdomain": "fetch-json-data",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}
